@@ -3,12 +3,13 @@
 ============================================================================== */
 body {
   background: $bg-clr;
-  counter-reset: number;
+  color: $text-clr;
   font-family: $font-stack;
+  line-height: 1.4;
 }
 
 main {
-  padding: 2em 0;
+  padding: 1em 0;
 
   p {
     margin-bottom: 1.5em;
@@ -30,6 +31,10 @@ main {
   }
 
   ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
 
     li:before {
       content: '\2219';
@@ -86,7 +91,6 @@ blockquote {
 img {
   display: block;
   max-width: 100%;
-  width: 100%;
 }
 
 small {
@@ -124,6 +128,11 @@ td {
 .container {
   @include container;
   padding: 0 .5em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 auto;
+  width: 100%;
 
   @include brk-large {
     padding: 0;
