@@ -43,14 +43,20 @@ main {
     }
   }
 
-  ol {
+  // ol {
 
-    li:before {
-      counter-increment: number;
-      content: counter(number);
-      color: $highlight-clr;
-      margin-right: .5em;
-    }
+  //   li:before {
+  //     counter-increment: number;
+  //     content: counter(number);
+  //     color: $highlight-clr;
+  //     margin-right: .5em;
+  //   }
+  // }
+
+  li {
+    text-indent: -1.5em;
+    padding-left: 1.5em;
+    margin-bottom: .5em;
   }
 
   li {
@@ -58,21 +64,15 @@ main {
     padding-left: 1.5em;
     margin-bottom: .5em;
   }
-
-  li {
-    text-indent: -1.5em;
-    padding-left: 1.5em;
-    margin-bottom: .5em;
-  }
 }
 
-h2 {
-  margin-bottom: .5em;
-}
+// h2 {
+//   margin-bottom: .5em;
+// }
 
-h3, h4, h5, h6 {
-  margin-bottom: .25em;
-}
+// h3, h4, h5, h6 {
+//   margin-bottom: .25em;
+// }
 
 ul, ol {
   list-style-type: none;
@@ -81,49 +81,49 @@ ul, ol {
   margin-bottom: 1em;
 }
 
-blockquote {
-  font-size: 1.25em;
-  font-style: italic;
-  padding: 0 1em;
-  border-left: 4px solid $highlight-clr;
-}
+// blockquote {
+//   font-size: 1.25em;
+//   font-style: italic;
+//   padding: 0 1em;
+//   border-left: 4px solid $highlight-clr;
+// }
 
 img {
   display: block;
   max-width: 100%;
 }
 
-small {
-  font-size: .85em;
-  margin-bottom: 1em;
-}
+// small {
+//   font-size: .85em;
+//   margin-bottom: 1em;
+// }
 
-iframe {
-  max-width: 100%;
-  margin: 0 auto;
-  display: block;
-}
+// iframe {
+//   max-width: 100%;
+//   margin: 0 auto;
+//   display: block;
+// }
 
-table {
-  margin-bottom: 2em;
-}
+// table {
+//   margin-bottom: 2em;
+// }
 
-tr {
-  &:nth-child(even) {
-    background: $grey;
-  }
-}
+// tr {
+//   &:nth-child(even) {
+//     background: $grey;
+//   }
+// }
 
-th {
-  border-bottom: 1px solid $highlight-clr;
-  padding: .5em;
-  padding-bottom: 0;
-  text-align: left;
-}
+// th {
+//   border-bottom: 1px solid $highlight-clr;
+//   padding: .5em;
+//   padding-bottom: 0;
+//   text-align: left;
+// }
 
-td {
-  padding: .5em;
-}
+// td {
+//   padding: .5em;
+// }
 
 .container {
   @include container;

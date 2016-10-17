@@ -1,78 +1,5 @@
-/* PROJECTNAME v1.0.0 - 2016-10-14 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
+/* jtn-design v1.0.0 - 2016-10-16 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
 
-/* ===========================================================================
-==== INCLUDED FONTS
-============================================================================== */
-/* ===========================================================================
-==== VARIABLES
-============================================================================== */
-/* RESPONSIVE MEDIA QUERIES
------------------------------------------------------------------------------- */
-/* FONTS
------------------------------------------------------------------------------- */
-/* COLORS
------------------------------------------------------------------------------- */
-/* COLOR CONFIGS
------------------------------------------------------------------------------- */
-/* WIDTHS
------------------------------------------------------------------------------- */
-.row {
-  float: left;
-  width: 100%;
-}
-
-.xshort,
-.short,
-.one-third,
-.med,
-.two-thirds,
-.long,
-.xlong,
-.full {
-  float: left;
-  width: 100%;
-}
-
-@media screen and (min-width: 30em) {
-  .xshort,
-  .short,
-  .med {
-    width: 25%;
-  }
-
-  .one-third {
-    width: 32%;
-    margin-right: 2%;
-  }
-  .one-third:last-child {
-    margin-right: 0;
-  }
-
-  .long {
-    width: 49%;
-    margin-right: 2%;
-  }
-  .long:last-child {
-    margin-right: 0;
-  }
-
-  .two-thirds {
-    width: 66.66666%;
-  }
-}
-@media screen and (min-width: 60em) {
-  .xshort {
-    width: 6.25%;
-  }
-
-  .short {
-    width: 12.5%;
-  }
-
-  .xlong {
-    width: 75%;
-  }
-}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -902,12 +829,6 @@ main ul li:before {
   color: #fc4314;
   margin-right: .5em;
 }
-main ol li:before {
-  counter-increment: number;
-  content: counter(number);
-  color: #fc4314;
-  margin-right: .5em;
-}
 main li {
   text-indent: -1.5em;
   padding-left: 1.5em;
@@ -917,14 +838,6 @@ main li {
   text-indent: -1.5em;
   padding-left: 1.5em;
   margin-bottom: .5em;
-}
-
-h2 {
-  margin-bottom: .5em;
-}
-
-h3, h4, h5, h6 {
-  margin-bottom: .25em;
 }
 
 ul, ol {
@@ -934,46 +847,9 @@ ul, ol {
   margin-bottom: 1em;
 }
 
-blockquote {
-  font-size: 1.25em;
-  font-style: italic;
-  padding: 0 1em;
-  border-left: 4px solid #fc4314;
-}
-
 img {
   display: block;
   max-width: 100%;
-}
-
-small {
-  font-size: .85em;
-  margin-bottom: 1em;
-}
-
-iframe {
-  max-width: 100%;
-  margin: 0 auto;
-  display: block;
-}
-
-table {
-  margin-bottom: 2em;
-}
-
-tr:nth-child(even) {
-  background: #999;
-}
-
-th {
-  border-bottom: 1px solid #fc4314;
-  padding: .5em;
-  padding-bottom: 0;
-  text-align: left;
-}
-
-td {
-  padding: .5em;
 }
 
 .container {
@@ -1100,15 +976,6 @@ td {
 }
 
 /* ===========================================================================
-==== PRIMARY INTERIOR PAGE STYLES
-============================================================================== */
-/* ===========================================================================
-==== FORM STYLES
-============================================================================== */
-/* ===========================================================================
-==== FOOTER
-============================================================================== */
-/* ===========================================================================
 ==== HELPER AND MODIFIER CLASSES
 ============================================================================== */
 /* Floats
@@ -1129,4 +996,64 @@ td {
 -------------------------------------------------------------------*/
 .intro {
   font-size: 1.25em;
+}
+
+/* WIDTHS
+------------------------------------------------------------------------------ */
+.row {
+  float: left;
+  width: 100%;
+}
+
+.xshort,
+.short,
+.one-third,
+.med,
+.two-thirds,
+.long,
+.xlong,
+.full {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+  .xshort,
+  .short,
+  .med {
+    width: 25%;
+  }
+
+  .one-third {
+    width: 32%;
+    margin-right: 2%;
+  }
+  .one-third:last-child {
+    margin-right: 0;
+  }
+
+  .long {
+    width: 49%;
+    margin-right: 2%;
+  }
+  .long:last-child {
+    margin-right: 0;
+  }
+
+  .two-thirds {
+    width: 66.66666%;
+  }
+}
+@media screen and (min-width: 60em) {
+  .xshort {
+    width: 6.25%;
+  }
+
+  .short {
+    width: 12.5%;
+  }
+
+  .xlong {
+    width: 75%;
+  }
 }

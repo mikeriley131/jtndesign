@@ -1,13 +1,13 @@
 {
-  "name": "PROJECTNAME",
-  "description": "DESCRIPTION",
+  "name": "jtn-design",
+  "description": "splash page for jtndesign.com",
   "version": "1.0.0",
   "author": "Mike Riley",
   "contact": "pyrographicdesign AT gmail DOT com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikeriley131/REPO.git"
+    "url": "https://github.com/mikeriley131/jtndesign.git"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
